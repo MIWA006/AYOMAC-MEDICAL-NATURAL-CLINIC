@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - AYOMAC Medical Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="nav" id="siteNav" role="banner">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <img src="c84a9b18-8e8c-4217-9f3a-0b24f0cfbacf.JPG" alt="AYOMAC logo">
+      <h2>AYOMAC</h2>
+    </a>
+    <nav class="nav-links">
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/index.html">Home</a>
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/services.html" class="active">Services</a>
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/about.html">About</a>
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/review.html">Reviews</a>
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/contact.html">Contact</a>
+      <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/book%20appointment.html" class="cta-nav">Book Appointment</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" style="display:none;position:fixed;inset:64px 12px auto auto;right:12px;z-index:70;">
+  <div style="background:rgba(255,255,255,0.98);border-radius:12px;padding:12px;box-shadow:0 10px 30px rgba(10,20,30,0.12);">
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/index.html" >Home</a>
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/services.html">Services</a>
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/about.html">About</a>
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/review.html">Reviews</a>
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/contact.html">Contact</a>
+   <a href="http://127.0.0.1:5501/AYOMAC%20MEDICAL%20CLINIC/book%20appointment.html" class="cta-nav">Book Appointment</a>
+  </div>
+</div>
+
+    <!-- Appointment Section -->
+    <section class="appointment-container">
+        <h1>Book an Appointment</h1>
+        <p>Fill in your details below and we’ll confirm your appointment shortly.</p>
+
+        <form action="submit_appointment.php" method="POST" class="appointment-form">
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" required>
+
+            <label>Preferred Date:</label>
+            <input type="date" name="date" required>
+
+            <label>Preferred Time:</label>
+            <input type="time" name="time" required>
+
+            <label>Reason for Appointment:</label>
+            <textarea name="message" rows="4" placeholder="Describe your symptoms or reason for visiting"></textarea>
+
+            <button type="submit" class="btn">Submit Appointment</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AYOMAC Medical Clinic</p>
+    </footer>
+
+</body>
+</html>
